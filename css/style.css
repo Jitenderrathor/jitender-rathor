@@ -1,0 +1,278 @@
+/* 01. Google Font Start ------------------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* ------------- Google Font End ------------- */
+
+/* 02.base Start ------------------------------ */
+
+:root {
+  --th-col-1: #f4f0ee;
+  --th-col-2: #ef644c;
+  --th-col-3: #442b3c;
+  --th-h1: 70px;
+  --th-h2: 60px;
+  --th-h3: 30px;
+  --th-p: 16px;
+  --th-a: 18px;
+  --font-family: "Inter", sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family);
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+
+h1 {
+  font-size: var(--th-h1);
+  font-weight: 400;
+  line-height: 1.2;
+}
+p {
+  font-family: var(--font-family);
+  font-size: var(--th-p);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* Scroll Bar style start */
+
+::-webkit-scrollbar {
+  /* width */
+  /* width: 10px; */
+}
+
+::-webkit-scrollbar:hover {
+  /* width: 50px; */
+}
+
+::-webkit-scrollbar-track {
+  /* Track */
+  /* background-color: ; */
+}
+
+::-webkit-scrollbar-thumb {
+  /* Handle */
+  /* background-color: ; */
+}
+
+/* Scroll Bar style End */
+
+.th-btn {
+  font-family: var(--font-family);
+  font-size: var(--th-a);
+  color: var(--th-col-2);
+  text-decoration: none;
+  font-weight: 400;
+  line-height: 1.3;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--th-col-2);
+}
+.th-btn .far {
+  transform: rotate(45deg);
+}
+
+/* ------------- base End ------------- */
+
+/* 04.Hero Section Start ------------------------------ */
+.hero {
+  padding: 80px 0px;
+}
+/* ------------- Hero  Section  End ------------- */
+/* 05.Number Section Start ------------------------------ */
+.number {
+  padding: 80px 0px;
+}
+.num-box {
+  position: relative;
+}
+.num-box h1 {
+  -webkit-text-stroke: 3px var(--th-col-2);
+  font-size: calc(var(--th-h1) * 1.8);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: left;
+  color: transparent;
+}
+.num-box p {
+  font-size: calc(var(--th-p) * 1.4);
+  font-weight: 400;
+  line-height: 1.2;
+  background-color: var(--th-col-1);
+  padding: 4px 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* ------------- Number Section  End ------------- */
+
+/* 06.Sub Heading Section Start ------------------------------ */
+.sub-heading {
+  background-color: var(--th-col-3);
+}
+.sub-text-box {
+  border-left: 1px solid var(--th-col-1);
+  padding: 100px 0px;
+}
+.sub-img {
+  transition: all 0.5s;
+}
+.sub-text-h {
+  font-size: var(--th-h2);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #786672;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.sub-text-h .fal {
+  font-size: calc(var(--th-h2) * 0.8);
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: all 0.5s;
+}
+.sub-heading p {
+  color: var(--th-col-1);
+  padding-left: 40px;
+}
+.sub-text-h.active {
+  color: var(--th-col-1);
+  border-bottom: 1px solid var(--th-col-1);
+}
+.sub-text-h.active .fal {
+  opacity: 1;
+}
+/* ------------- Sub Heading Section  End ------------- */
+
+/* 07.Testimonial Section Start ------------------------------ */
+.testimonial {
+  background-color: var(--th-col-1);
+  padding: 80px 0px;
+}
+.test-btn-box {
+  padding: 20px;
+  border-left: 3px solid rgba(120, 102, 114, 0.443);
+  transition: all 0.5s;
+}
+.test-btn-box img {
+  max-width: 70px;
+  width: 100%;
+}
+.test-btn-box.active {
+  border-left: 3px solid var(--th-col-2);
+}
+.test-text-box p {
+  font-size: calc(var(--th-h1) * 0.4);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.test-text-box .fas {
+  color: var(--th-col-2);
+}
+/* ------------- Testimonial Section  End ------------- */
+
+/* 08.Heading Section Start ------------------------------ */
+.heading {
+  padding: 100px 0px;
+  background-color: var(--th-col-3);
+}
+.heading-box {
+  padding: 20px 50px;
+  border-top: 1px solid var(--th-col-1);
+}
+.h-box-top {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.h-box-top h1 {
+  font-size: calc(var(--th-h1) * 1.5);
+  color: var(--th-col-1);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.h-box-top .far {
+  font-size: var(--th-h3);
+  color: var(--th-col-1);
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.heading-box.active .far {
+  color: var(--th-col-2);
+  transform: rotate(-45deg);
+}
+.h-box-bottom .hbb-title {
+  font-size: var(--th-h3);
+  font-family: var(--font-family);
+  color: var(--th-col-1);
+  font-weight: 700;
+  line-height: 1.2;
+}
+.h-box-bottom .hbb-text p {
+  font-size: var(--th-a);
+  color: var(--th-col-1);
+  margin-bottom: 40px;
+}
+.h-box-bottom .hbb-text a.th-btn {
+  border: none;
+}
+/* ------------- Heading Section  End ------------- */
+
+/* 09.Last Section Start ------------------------------ */
+.last {
+  padding: 100px 0px;
+  background-color: #ffefe4;
+}
+.l-text-box{
+  height: 100%;
+  background-color: white;
+  padding: 30px;
+}
+.l-text-box .title {
+  width: 95px;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: var(--th-h3);
+  font-weight: 700;
+  background-color: #ffefe4;
+  border-radius: 50%;
+  position: relative;
+}
+.left-text .l-text-box .title{
+  left: 95%;
+}
+.right-text .l-text-box .title{
+  right: 20%;
+}
+.l-text-box h3{
+  font-family: var(--font-family);
+font-size: var(--th-h3);
+font-weight: 700;
+line-height: 1.2;
+}
+.l-text-box .line{
+  width: 50px;
+  height: 2px;
+  background-color: var(--th-col-2);
+  border-radius: 4px;
+  margin: 10px 0px;
+}
+/* ------------- Last Section  End ------------- */

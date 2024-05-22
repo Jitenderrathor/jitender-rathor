@@ -1,0 +1,70 @@
+/* Extra large devices (1200px and down) */
+
+@media screen and (max-width: 1200px) {
+}
+
+/* Large devices (992px and down) */
+
+@media screen and (max-width: 992px) {
+  :root {
+    --th-h1: calc(70px * 0.75);
+    --th-h2: 60px;
+    --th-h3: 30px;
+    --th-p: 16px;
+    --th-a: 18px;
+  }
+  .sub-heading p {
+    padding: 20px;
+  }
+  .sub-heading {
+    padding: 80px 0px;
+  }
+  .sub-text-box {
+    border-left: 1px solid var(--th-col-1);
+    padding:0px;
+  }
+  .left-text .l-text-box .title{
+    left: 0;
+  }
+  .right-text .l-text-box .title{
+    right: 0;
+  }
+}
+
+/* Medium devices (768px and down) */
+
+@media screen and (max-width: 768px) {
+  :root {
+    --th-h1: calc(70px * 0.65);
+  }
+  .number {
+    padding-top: 0px;
+  }
+  .num-box p {
+    /* padding: 1px 4px; */
+    font-size: var(--th-p);
+  }
+  .sub-text-h {
+    padding-left: 20px;
+  }
+  .test-btn-box {
+    text-align: center;
+    border-left: 0px;
+    border-bottom: 3px solid rgba(120, 102, 114, 0.443);
+  }
+  .test-btn-box.active {
+    border-left: 0px;
+    border-bottom: 3px solid var(--th-col-2);
+  }
+  .heading-box{
+    padding: 20px;
+  }
+  .h-box-top h1{
+    font-size: var(--th-h1);
+  }
+}
+
+/* Small devices (576px and down) */
+
+@media screen and (max-width: 576px) {
+}
